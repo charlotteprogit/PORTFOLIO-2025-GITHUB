@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cha's Portfolio</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <nav class="topnav" id="myTopnav">
+        <a href="accueil.html">Présentation</a>
+        <a href="projets.html">Projets</a>
+        <a href="art.html">Art</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <header>
+        <h1 class="title">projets</h1>
+        <div class="info">
+            <p>maquettes</p>
+            <p>affiches</p>
+            <p>packaging</p>
+            <p>logos</p>
+        </div>
+    </header>
+    <main>
+        <div class="gallery">
+            <a href="LRB.html">
+                <div class="gallery-item">
+                    <img src="projet_LRB.png" alt="">
+                    <div class="texte_gallery">
+                        <h2>Le Rucher de la Brédoire</h2>
+                        <p>Maquette web</p>
+                    </div>
+                </div>
+            </a>
+            <a href="Arcane.html">
+                <div class="gallery-item">
+                    <img src="minia_arcane.png" alt="">
+                    <div class="texte_gallery">
+                        <h2>Arcane</h2>
+                        <p>Maquette web</p>
+                    </div>
+                </div>
+            </a> 
+            <a href="Woofty.html">
+                <div class="gallery-item">
+                    <img src="woofty.png" alt="">
+                    <div class="texte_gallery">
+                        <h2>Woofty</h2>
+                        <p>Packaging</p>
+                    </div>
+                </div>
+            </a>
+           
+            <a href="Peanut.html">
+                <div class="gallery-item">
+                    <img src="projet_peanut.png" alt="">
+                    <div class="texte_gallery">
+                        <h2>Peanut</h2>
+                        <p>Affiche</p>
+                    </div>
+                </div>
+            </a>
+            <a href="Twiq.html">
+                <div class="gallery-item">
+                    <img src="projet_twiq.png" alt="">
+                    <div class="texte_gallery">
+                        <h2>Twiq</h2>
+                        <p>Affiche</p>
+                    </div>
+                </div>
+            </a> <a href="PPPE.html">
+                <div class="gallery-item">
+                    <img src="projet_PPPE.png" alt="">
+                    <div class="texte_gallery">
+                        <h2>PPPE</h2>
+                        <p>Maquette et développement web</p>
+                    </div>
+                </div>
+            </a>
+           
+        </div>
+    </main>
+    <footer>
+        <p>PORTFOLIO - 2025</p>
+    </footer>
+
+</body>
+
+</html>
