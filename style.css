@@ -212,13 +212,15 @@ header {
     font-family: "Itim", serif;
     line-height: 30px;
     list-style-type: circle;
+    font-size: 20px;
     margin-left: 2rem;
     
 }
 
 .ul_competences {
     display: flex;
-    padding-top: 1rem;font-size: 20px;
+    padding-top: 1rem;
+    font-size: 20px;
   
 }
 
