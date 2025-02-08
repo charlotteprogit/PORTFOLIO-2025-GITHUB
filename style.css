@@ -752,5 +752,8 @@ footer p {
     }
     .description{
     padding: 4rem 10% 1rem 10%;
-}
+
+    .texte_competences li{
+        font-size: 14px;
+    }
 }
