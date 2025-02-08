@@ -435,6 +435,11 @@ footer p {
     font-size: 35px;
 }
 
+.description{
+    padding: 4rem 25% 1rem 25%;
+    text-align: center;
+}
+
 @media (min-width: 1650px) {
 
     .presentation,
@@ -743,4 +748,7 @@ footer p {
     .info p{
         display: none;
     }
+    .description{
+    padding: 4rem 10% 1rem 10%;
+}
 }
