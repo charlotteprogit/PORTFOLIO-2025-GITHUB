@@ -15,22 +15,18 @@ nav li {
     padding: 0 2rem;
 }
 
-.suivant a{
-    font-size: 30px;}
+strong{
+    font-weight: 600;
+}
+
 
 /*              RESPONSIVE MENU             */
-
 
 
 
 .topnav {
     overflow: hidden;
     background-color: #333;
-    position: fixed; /* Fixer le menu en haut */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000; /* Pour s'assurer qu'il est au-dessus */
 }
 
 .topnav a {
@@ -38,7 +34,7 @@ nav li {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 25px 16px;
+    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -58,11 +54,13 @@ nav li {
 }
 
 
+
+
 a {
     color: white;
     text-decoration: none;
     font-family: "Itim", serif;
-    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .bouton {
@@ -96,12 +94,14 @@ h2 {
     padding-bottom: 2rem;
     font-family: "Caprasimo", serif;
     font-size: 30px;
+    text-transform: uppercase;
+    color: #866D83;
 }
 
 p {
     line-height: 30px;
     font-family: "Itim", serif;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 body {
@@ -109,24 +109,12 @@ body {
 }
 
 header {
-    background-image: url(banniere_accueil_pc.png);
+    background-image: url(img/banniere_accueil_pc.png);
     background-size: cover;
+    padding-bottom: 15rem;
 }
 
-.info {
-    padding-top: 8rem;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    width: 60%;
-    padding-bottom: 2rem;
-    padding-left: 5rem;
-}
 
-.info p {
-    border-bottom: rgb(255, 255, 255) 3px solid;
-    padding-bottom: 0.5rem;
-}
 
 .presentation {
     display: flex;
@@ -137,28 +125,17 @@ header {
 .texte_presentation {
     padding-right: 2rem;
     margin-right: 5rem;
+    width: 60%;
 }
 
 .image_presentation {
-    width: 80%;
+    width: 40%;
 }
 
 .image_presentation img {
     display: block;
     width: 100%;
     height: auto;
-}
-
-.icons {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 2rem;
-    padding-top: 1.5rem;
-    width: 50%;
-}
-
-.icons img {
-    width: 25%;
 }
 
 .projets {
@@ -215,16 +192,12 @@ header {
     font-family: "Itim", serif;
     line-height: 30px;
     list-style-type: circle;
-    font-size: 20px;
     margin-left: 2rem;
-    
 }
 
 .ul_competences {
     display: flex;
     padding-top: 1rem;
-    font-size: 20px;
-  
 }
 
 .rapport_numerique {
@@ -310,16 +283,22 @@ header {
     display: flex;
     padding: 5rem;
     justify-content: center;
+    background-color: #FCF9EE;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.art img {
+.img_art{
+    width: 40%;
+}
+
+.img_art img{
     display: block;
-    width: 30%;
+    width: 100%;
     height: auto;
 }
 
 .texte_art {
-    width: 30%;
+    width: 60%;
     padding-left: 5rem;
 }
 
@@ -435,11 +414,7 @@ footer p {
 .suivant{
     padding-top: 0;
     font-size: 35px;
-}
-
-.description{
-    padding: 4rem 25% 1rem 25%;
-    text-align: center;
+    padding-left: 5rem;
 }
 
 @media (min-width: 1650px) {
@@ -492,12 +467,8 @@ footer p {
         align-items: center;
     }
 
-    .art {
-        padding: 4rem 0 4rem 0;
-    }
-
     .image_presentation {
-        width: 70%;
+        width: 100%;
     }
 
     .gallery-item img {
@@ -511,12 +482,26 @@ footer p {
 }
 
 @media (max-width: 960px) {
+
+    .presentation {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .presentation img {
+        width: 60%;
+        margin: auto;
+    }
+
     .texte_presentation {
-        width: 70%;
+        padding-top: 2rem;
+        padding-right: 0;
     }
 
     .presentation .bouton {
         text-align: center;
+        margin: 2rem auto 0 auto;
     }
 
     .texte_projets {
@@ -533,7 +518,10 @@ footer p {
 
     .projets {
         flex-direction: column;
+       
     }
+
+    
 
     .minia {
         flex-direction: row;
@@ -547,13 +535,13 @@ footer p {
     .competences {
         flex-direction: column;
         position: relative;
+         text-align: center;
     }
 
     .image_competences {
-        width: 23%;
-        position: absolute;
-        bottom: 0;
-        right: 50px;
+        width: 50%;
+        margin: auto;
+        padding-top: 2rem;
     }
 
     .flex-card {
@@ -564,14 +552,30 @@ footer p {
     .card {
         margin-bottom: 3rem;
     }
+     .art {
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        padding-top: 3rem;
 
-    .art img {
-        width: 50%;
     }
 
-    .gallery-item img {
-        height: 12rem;
+    .texte_art {
+        width: 100%;
+        padding-top: 2rem;
+        padding-left: 0;
+        text-align: center;
     }
+
+    .img_art {
+        width: 80%;
+        margin: auto;
+    }
+
+    .art .bouton {
+        margin: 2rem auto 0 auto;
+    }
+
 }
 
 @media (max-width: 750px) {
@@ -588,17 +592,6 @@ footer p {
         width: 80%;
     }
 
-    .presentation {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .texte_presentation {
-        padding-top: 2rem;
-        padding-right: 0;
-    }
-
     .icons {
         text-align: center;
         margin: auto;
@@ -606,29 +599,7 @@ footer p {
 
     }
 
-    .art {
-        flex-direction: column;
-        width: 80%;
-        text-align: center;
-        margin: auto;
-        padding-top: 3rem;
-
-    }
-
-    .texte_art {
-        width: 100%;
-        padding-top: 2rem;
-        padding-left: 0;
-        text-align: center;
-    }
-
-    .art img {
-        width: 100%;
-    }
-
-    .art .bouton {
-        margin: 2rem auto 0 auto;
-    }
+   
 
     .flex-card {
         grid-template-columns: 100%;
@@ -655,39 +626,33 @@ footer p {
         height: 20rem;
     }
 
-   .topnav a {
-        display: none; /* Cache les liens */
+    .topnav a {
+        display: none;
     }
 
-    .topnav .icon {
-        display: block;
-        float: right;
-    }
-
-    .topnav.responsive {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: fixed; /* Garde le menu visible */
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        z-index: 1000;
+    .topnav a:first-child {
         padding-top: 4rem;
     }
 
-    .topnav.responsive a {
+    .topnav a.icon {
+        float: left;
         display: block;
-        width: 100%;
-        text-align: center;
-        padding: 14px;
+    }
+
+    .topnav.responsive {
+        position: relative;
     }
 
     .topnav.responsive .icon {
         position: absolute;
-
+        left: 0;
         top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
 
 }
@@ -734,6 +699,7 @@ footer p {
 
     .ul_competences {
         flex-direction: column;
+        font-size: 14px;
     }
 
     .image_competences {
@@ -749,10 +715,10 @@ footer p {
     .info p{
         display: none;
     }
-    .description{
-    padding: 4rem 10% 1rem 10%;}
 
-    .texte_competences li{
-        font-size: 14px;
-    }
+    .art{padding: 1rem;}
+}
+@media screen and (max-width: 400px){
+    .title{
+        font-size: 50px}
 }
