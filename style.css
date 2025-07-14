@@ -109,7 +109,7 @@ body {
 }
 
 header {
-    background-image: url(img/banniere_accueil_pc.png);
+    background-image: url(banniere_accueil_pc.png);
     background-size: cover;
     padding-bottom: 15rem;
 }
