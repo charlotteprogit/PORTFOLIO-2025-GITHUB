@@ -24,6 +24,10 @@ strong{
     text-align: center;
 }
 
+main{
+    max-width: 1600px;
+}
+
 
 /*              RESPONSIVE MENU             */
 
